@@ -86,7 +86,11 @@ public class ToDoList extends JFrame{
             }
 
             @Override
-            public void mousePressed(MouseEvent e) {}
+            public void mousePressed(MouseEvent e) {
+                // Create variable to find which list item is under the mouse
+                int selection = toDoList.locationToIndex(e.getPoint());
+                toDoList.setSelectedIndex(selection);
+            }
 
             @Override
             public void mouseReleased(MouseEvent e) {}
