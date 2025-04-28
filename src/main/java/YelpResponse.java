@@ -9,7 +9,7 @@ class Business {
     // represents one business object
     public String name;
     public double rating;
-    public Location locations;
+    public Location location;
 
 }
 

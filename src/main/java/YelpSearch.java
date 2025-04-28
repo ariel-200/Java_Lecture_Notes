@@ -30,7 +30,7 @@ public class YelpSearch {
             for (Business b : response.businesses) {
                 System.out.println(b.name);
                 System.out.println("Rating: " + b.rating);
-                System.out.println(b.locations.address1 + ", " + b.locations.city);
+                System.out.println(b.location.address1 + ", " + b.location.city);
 
             }
 
